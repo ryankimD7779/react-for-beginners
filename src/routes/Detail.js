@@ -14,9 +14,6 @@ function Detail() {
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
     const getM = json.data.movie;
-    console.log("@@@@@@@@@");
-    console.log(getM);
-    console.log("@@@@@@@@@");
     setMovie(getM);
   };
 
